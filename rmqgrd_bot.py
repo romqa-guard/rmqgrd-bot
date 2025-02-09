@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 # Токен вашего бота (замените на ваш токен)
-TOKEN = "7015032914:AAGcFW6vVP_yArlmwPpAAE7h7iZcrswrAIM"
+TOKEN = "ВАШ_ТОКЕН_ЗДЕСЬ"
 
 # Функция для обработки команды /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -29,7 +29,7 @@ def main():
         listen="0.0.0.0",  # Слушаем все интерфейсы
         port=10000,        # Порт, который будет слушать бот
         webhook_url="https://your-render-url.onrender.com/webhook",  # URL вашего бота
-        cert="cert.pem"    # Сертификат (необязательно для Render)
+        cert=None          # Не используем сертификат
     )
 
 if __name__ == "__main__":
