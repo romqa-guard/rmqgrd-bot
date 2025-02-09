@@ -28,7 +28,7 @@ def main():
     application.run_webhook(
         listen="0.0.0.0",  # Слушаем все интерфейсы
         port=10000,        # Порт, который будет слушать бот
-        webhook_url="https://your-render-url.onrender.com/webhook",  # URL вашего бота
+        webhook_url="https://rmqgrd-bot.onrender.com",  # URL вашего бота
         cert=None          # Не используем сертификат
     )
 
